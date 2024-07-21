@@ -1,0 +1,241 @@
+Type                    Reconstruction-based               Synthesizing-based                     Embedding-based                          Ours
+Model                   AE-SSIM         RIAD               DRAEM          CutPaste              CS-Flow         PaDiM         RevDist         PatchCore       SimpleNet
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Carpet                  87/64.7         84.2/96.3          97.0/95.5      93.9/98.3             100/-           99.8/99.1     98.9/98.9       98.7/99.0       99.7/98.2
+Grid                    94/84.9         99.6/98.8          99.9/99.7      100/97.5              99.0/-          96.7/97.3     100/99.3        98.2/98.7       99.9/98.8
+Leather                 78/56.1         100/99.1           100/99.6       100/99.5              100/-           100/99.2      100/99.4        100/99.4        100/99.4
+Tile                    59/17.5         98.7/89.1          99.6/99.2      94.6/90.5             100/-           98.1/94.1     99.2/95.6       98.7/95.0       100/94.5
+Wood                    73/60.3         93.0/85.8          99.1/96.4      99.1/95.5             100/-           99.2/94.9     99.2/95.3       99.2/95.0       100/94.5
+Avg. Text.              78/56.7         95.1/93.9          99.1/97.9      97.5/96.3             99.8/-          95.5/96.9     99.5/97.7       99.0/97.5       99.8/97.5
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Bottle                  93/83.4         99.9/98.4          99.2/99.1      98.2/97.6             99.8/-          99.1/98.3     100/99.4        100/99.8        100/98.8
+Cable                   82/47.8         81.9/84.2          91.8/91.7      81.2/90.0             91.1/-          97.1/96.7     95.0/97.4       99.5/98.4       99.9/97.6
+Capsule                 94/86.0         99.8/98.8          98.5/94.3      96.3/93.6             97.1/-          87.5/98.5     97.7/97.5       98.9/98.2       97.7/98.9
+Hazelnut                97/91.6         83.3/96.1          100/99.7       98.3/97.3             99.6/-          100/98.7      100/99.3        100/99.7        100/99.3
+Metal Nut               89/60.3         86.5/92.5          98.0/99.5      99.9/93.1             100/-           96.2/97.2     100/99.3        99.7/98.4       100/98.6
+Pill                    91/83.0         91.0/91.8          98.9/97.6      94.8/95.7             100/-           96.3/97.5     96.6/97.4       99.0/97.5       99.9/97.8
+Screw                   96/88.7         84.5/98.6          98.8/98.7      97.0/96.0             97.6/-          99.1/97.6     99.0/99.6       99.6/99.4       100/99.4
+Toothbrush              92/78.4         100/98.1           98.8/99.4      98.1/97.4             100/-           100/99.1      100/99.9        100/99.7        100/99.9
+Transistor              90/72.5         100/98.7           98.4/97.8      98.7/97.3             98.2/-          99.3/97.4     99.5/97.8       99.8/98.0       100/98.3
+Zipper                  88/66.5         100/98.6           99.9/98.7      100/98.8              100/-           100/99.5      100/98.7        100/98.9        100/98.8
+Avg. Obj.               91/75.8         89.6/96.2          98.7/97.0      95.5/95.8             98.7/-          96.0/97.8     99.0/98.4       99.5/98.1       99.6/98.1
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Average                 87/69.4         91.7/94.2          98.0/97.3      96.1/96.0             99.7/-          95.6/97.4     98.5/97.8       99.1/98.1       99.6/98.3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| Model       | AE-SSIM | RIAD       | DRAEM      | CutPaste   | CS-Flow  | PaDiM      | RevDist    | PatchCore  | SimpleNet  |
+|-------------|---------|------------|------------|------------|----------|------------|------------|------------|------------|
+| Carpet      | 87/64.7 | 84.2/96.3  | 97.0/95.5  | 93.9/98.3  | 100/-    | 99.8/99.1  | 98.9/98.9  | 98.7/99.0  | 99.7/98.2  |
+| Grid        | 94/84.9 | 99.6/98.8  | 99.9/99.7  | 100/97.5   | 99.0/-   | 96.7/97.3  | 100/99.3   | 98.2/98.7  | 99.9/98.8  |
+| Leather     | 78/56.1 | 100/99.1   | 100/99.6   | 100/99.5   | 100/-    | 100/99.2   | 100/99.4   | 100/99.4   | 100/99.4   |
+| Tile        | 59/17.5 | 98.7/89.1  | 99.6/99.2  | 94.6/90.5  | 100/-    | 98.1/94.1  | 99.2/95.6  | 98.7/95.0  | 100/94.5   |
+| Wood        | 73/60.3 | 93.0/85.8  | 99.1/96.4  | 99.1/95.5  | 100/-    | 99.2/94.9  | 99.2/95.3  | 99.2/95.0  | 100/94.5   |
+| Avg. Text.  | 78/56.7 | 95.1/93.9  | 99.1/97.9  | 97.5/96.3  | 99.8/-   | 95.5/96.9  | 99.5/97.7  | 99.0/97.5  | 99.8/97.5  |
+|-------------|---------|------------|------------|------------|----------|------------|------------|------------|------------|
+| Bottle      | 93/83.4 | 99.9/98.4  | 99.2/99.1  | 98.2/97.6  | 99.8/-   | 99.1/98.3  | 100/99.4   | 100/99.8   | 100/98.8   |
+| Cable       | 82/47.8 | 81.9/84.2  | 91.8/91.7  | 81.2/90.0  | 91.1/-   | 97.1/96.7  | 95.0/97.4  | 99.5/98.4  | 99.9/97.6  |
+| Capsule     | 94/86.0 | 99.8/98.8  | 98.5/94.3  | 96.3/93.6  | 97.1/-   | 87.5/98.5  | 97.7/97.5  | 98.9/98.2  | 97.7/98.9  |
+| Hazelnut    | 97/91.6 | 83.3/96.1  | 100/99.7   | 98.3/97.3  | 99.6/-   | 100/98.7   | 100/99.3   | 100/99.7   | 100/99.3   |
+| Metal Nut   | 89/60.3 | 86.5/92.5  | 98.0/99.5  | 99.9/93.1  | 100/-    | 96.2/97.2  | 100/99.3   | 99.7/98.4  | 100/98.6   |
+| Pill        | 91/83.0 | 91.0/91.8  | 98.9/97.6  | 94.8/95.7  | 100/-    | 96.3/97.5  | 96.6/97.4  | 99.0/97.5  | 99.9/97.8  |
+| Screw       | 96/88.7 | 84.5/98.6  | 98.8/98.7  | 97.0/96.0  | 97.6/-   | 99.1/97.6  | 99.0/99.6  | 99.6/99.4  | 100/99.4   |
+| Toothbrush  | 92/78.4 | 100/98.1   | 98.8/99.4  | 98.1/97.4  | 100/-    | 100/99.1   | 100/99.9   | 100/99.7   | 100/99.9   |
+| Transistor  | 90/72.5 | 100/98.7   | 98.4/97.8  | 98.7/97.3  | 98.2/-   | 99.3/97.4  | 99.5/97.8  | 99.8/98.0  | 100/98.3   |
+| Zipper      | 88/66.5 | 100/98.6   | 99.9/98.7  | 100/98.8   | 100/-    | 100/99.5   | 100/98.7   | 100/98.9   | 100/98.8   |
+| Avg. Obj.   | 91/75.8 | 89.6/96.2  | 98.7/97.0  | 95.5/95.8  | 98.7/-   | 96.0/97.8  | 99.0/98.4  | 99.5/98.1  | 99.6/98.1  |
+|-------------|---------|------------|------------|------------|----------|------------|------------|------------|------------|
+| Average     | 87/69.4 | 91.7/94.2  | 98.0/97.3  | 96.1/96.0  | 99.7/-   | 95.6/97.4  | 98.5/97.8  | 99.1/98.1  | 99.6/98.3  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1] Davide Abati, Angelo Porrello, Simone Calderara, and Rita
+Cucchiara. Latent space autoregression for novelty detec￾tion. In Proceedings of the IEEE/CVF conference on com￾puter vision and pattern recognition, pages 481–490, 2019.
+8
+[2] Jinwon An and Sungzoon Cho. Variational autoencoder
+based anomaly detection using reconstruction probability.
+Special Lecture on IE, 2(1):1–18, 2015. 8
+[3] Paul Bergmann, Michael Fauser, David Sattlegger, and
+Carsten Steger. Mvtec ad–a comprehensive real-world
+dataset for unsupervised anomaly detection. In Proceedings
+of the IEEE/CVF conference on computer vision and pattern
+recognition, pages 9592–9600, 2019. 1, 5
+[4] Paul Bergmann, Michael Fauser, David Sattlegger, and
+Carsten Steger. Uninformed students: Student-teacher
+anomaly detection with discriminative latent embeddings. In
+Proceedings of the IEEE/CVF Conference on Computer Vi￾sion and Pattern Recognition, pages 4183–4192, 2020. 3
+[5] Yuanhong Chen, Yu Tian, Guansong Pang, and Gustavo
+Carneiro. Deep one-class classification via interpolated
+gaussian descriptor. In Proceedings of the AAAI Conference
+on Artificial Intelligence, pages 383–392, 2022. 8
+[6] Thomas Defard, Aleksandr Setkov, Angelique Loesch, and
+Romaric Audigier. Padim: a patch distribution modeling
+framework for anomaly detection and localization. In Inter￾national Conference on Pattern Recognition, pages 475–489.
+Springer, 2021. 1, 2, 3, 5, 8
+[7] Hanqiu Deng and Xingyu Li. Anomaly detection via reverse
+distillation from one-class embedding. In Proceedings of
+the IEEE/CVF Conference on Computer Vision and Pattern
+Recognition, 2022. 2, 3, 5, 8
+[8] Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li,
+and Li Fei-Fei. Imagenet: A large-scale hierarchical image
+database. In 2009 IEEE conference on computer vision and
+pattern recognition, pages 248–255. Ieee, 2009. 5
+[9] Laurent Dinh, Jascha Sohl-Dickstein, and Samy Ben￾gio. Density estimation using real nvp. arXiv preprint
+arXiv:1605.08803, 2016. 3
+[10] Dong Gong, Lingqiao Liu, Vuong Le, Budhaditya Saha,
+Moussa Reda Mansour, Svetha Venkatesh, and Anton
+van den Hengel. Memorizing normality to detect anomaly:
+Memory-augmented deep autoencoder for unsupervised
+anomaly detection. In Proceedings of the IEEE/CVF Inter￾national Conference on Computer Vision, pages 1705–1714,
+2019. 2
+[11] Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing
+Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and
+Yoshua Bengio. Generative adversarial nets. Advances in
+neural information processing systems, 27, 2014. 2
+[12] Denis Gudovskiy, Shun Ishizaka, and Kazuki Kozuka.
+Cflow-ad: Real-time unsupervised anomaly detection with
+localization via conditional normalizing flows. In Proceed￾ings of the IEEE/CVF Winter Conference on Applications of
+Computer Vision, pages 98–107, 2022. 3
+[13] Matthias Haselmann, Dieter P Gruber, and ul Tabatabai.
+Anomaly detection using deep learning based image com￾pletion. In 2018 17th IEEE international conference on ma￾chine learning and applications (ICMLA), pages 1237–1242.
+IEEE, 2018. 2
+[14] Jinlei Hou, Yingying Zhang, Qiaoyong Zhong, Di Xie, Shil￾iang Pu, and Hong Zhou. Divide-and-assemble: Learning
+block-wise memory for unsupervised anomaly detection. In
+Proceedings of the IEEE/CVF International Conference on
+Computer Vision, pages 8791–8800, 2021. 8
+[15] Wenpeng Hu, Mengyu Wang, Qi Qin, Jinwen Ma, and
+Bing Liu. Hrn: A holistic approach to one class learn￾ing. Advances in Neural Information Processing Systems,
+33:19111–19124, 2020. 8
+[16] A Krizhevsky. Learning multiple layers of features from tiny
+images. Master’s thesis, University of Tront, 2009. 5, 8
+[17] Chun-Liang Li, Kihyuk Sohn, Jinsung Yoon, and Tomas
+Pfister. Cutpaste: Self-supervised learning for anomaly de￾tection and localization. In Proceedings of the IEEE/CVF
+Conference on Computer Vision and Pattern Recognition,
+pages 9664–9674, 2021. 2, 4, 5
+[18] Philipp Liznerski, Lukas Ruff, Robert A Vandermeulen,
+Billy Joe Franks, Marius Kloft, and Klaus Robert Muller.
+Explainable deep one-class classification. In International
+Conference on Learning Representations, 2020. 4
+[19] Pramuditha Perera, Ramesh Nallapati, and Bing Xiang. Oc￾gan: One-class novelty detection using gans with constrained
+latent representations. In Proceedings of the IEEE/CVF Con￾ference on Computer Vision and Pattern Recognition, pages
+2898–2906, 2019. 2, 8
+[20] Danilo Rezende and Shakir Mohamed. Variational inference
+with normalizing flows. In International conference on ma￾chine learning, pages 1530–1538. PMLR, 2015. 3
+[21] Nicolae-C˘at˘alin Ristea, Neelu Madan, Radu Tudor Ionescu,
+Kamal Nasrollahi, Fahad Shahbaz Khan, Thomas B Moes￾lund, and Mubarak Shah. Self-supervised predictive convo￾lutional attentive block for anomaly detection. In Proceed￾ings of the IEEE/CVF Conference on Computer Vision and
+Pattern Recognition, pages 13576–13586, 2022. 2
+[22] Karsten Roth, Latha Pemula, Joaquin Zepeda, Bernhard
+Sch¨olkopf, Thomas Brox, and Peter Gehler. Towards to￾tal recall in industrial anomaly detection. In Proceedings of
+the IEEE/CVF Conference on Computer Vision and Pattern
+Recognition, pages 14318–14328, 2022. 2, 3, 5, 6, 8
+[23] Marco Rudolph, Bastian Wandt, and Bodo Rosenhahn. Same
+same but differnet: Semi-supervised defect detection with
+normalizing flows. In Proceedings of the IEEE/CVF winter
+conference on applications of computer vision, pages 1907–
+1916, 2021. 3
+[24] Marco Rudolph, Tom Wehrbein, Bodo Rosenhahn, and Bas￾tian Wandt. Fully convolutional cross-scale-flows for image￾based defect detection. In Proceedings of the IEEE/CVF
+Winter Conference on Applications of Computer Vision,
+pages 1088–1097, 2022. 2, 3, 5, 6
+[25] Lukas Ruff, Robert Vandermeulen, Nico Goernitz, Lucas
+Deecke, Shoaib Ahmed Siddiqui, Alexander Binder, Em￾manuel M¨uller, and Marius Kloft. Deep one-class classifica￾tion. In International conference on machine learning, pages
+4393–4402. PMLR, 2018. 8
+[26] Mohammadreza Salehi, Niousha Sadjadi, Soroosh
+Baselizadeh, Mohammad H Rohban, and Hamid R Rabiee. Multiresolution knowledge distillation for anomaly
+detection. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, pages
+14902–14912, 2021. 8
+[27] Thomas Schlegl, Philipp Seeb¨ock, Sebastian M Waldstein,
+Ursula Schmidt-Erfurth, and Georg Langs. Unsupervised
+anomaly detection with generative adversarial networks to
+guide marker discovery. In International conference on information processing in medical imaging, pages 146–157.
+Springer, 2017. 8
+[28] Kihyuk Sohn, Chun-Liang Li, Jinsung Yoon, Minho Jin, and
+Tomas Pfister. Learning and evaluating representations for
+deep one-class classification. In International Conference
+on Learning Representations, 2021. 8
+[29] Zhou Wang, Alan C Bovik, Hamid R Sheikh, and Eero P Simoncelli. Image quality assessment: from error visibility to
+structural similarity. IEEE transactions on image processing,
+13(4):600–612, 2004. 2
+[30] Vitjan Zavrtanik, Matej Kristan, and Danijel Skoˇcaj. Draema discriminatively trained reconstruction embedding for surface anomaly detection. In Proceedings of the IEEE/CVF
+International Conference on Computer Vision, pages 8330–
+8339, 2021. 2, 4, 5
+[31] Vitjan Zavrtanik, Matej Kristan, and Danijel Skoˇcaj. Reconstruction by inpainting for visual anomaly detection. Pattern
+Recognition, 112:107706, 2021. 2, 5
+
+
+
+
+
+
+
+
+\hline
+Carpet & 99.7 / 98.9 & 98.7 / 99.0 & 99.5 / 97.4 & 99.8 / 97.9 \\
+\hline
+Carpet & 99.7 / 98.9 & 98.7 / 99.0 & 99.5 / 97.4 & 99.8 / 97.9 \\
+
+\hline
+Avg.Text. &	95.5 / 96.9 & 99.0 / 97.5 & 99.8 / 97.5 & 99.5 / 96.9 \\
+\hline
+Bottle & 99.8 / 98.1 & 100 / 99.8 & 100 / 98.8 & 98.8 / 98.1 \\
+Cable & 93.1 / 96.8 & 99.5 / 98.4 & 99.9 / 97.6 & 99.1 / 96.8 \\
+Capsule & 87.5 / 98.5 & 98.9 / 98.2 & 97.7 / 98.9 & 97.7 / 98.3 \\
+Hazelnut & 93.1/ 98.0 & 100 / 99.7 & 99.6 / 97.5 & 99.1 / 95.2 \\
+Metal Nut & 99.8 / 97.2 & 99.7 / 98.4 & 100 / 98.6 & 96.8 / 93.2 \\
+Pill & 93.9 / 96.1 & 99.0 / 97.5 & 98.6 / 96.3 & 95.9 / 93.1 \\
+Screw & 83.7 / 98.3 & 99.6 / 99.4 & 98.7 / 94.7 & 99.7 / 92.1 \\
+Toothbrush & 97.5 / 98.7 & 100 / 99.7 & 97.2 / 97.3 & 92.1 / 93.7 \\
+Transistor & 97.5 / 97.5 & 99.8 / 98.0	96.5 / 95.3 & 97.5 / 93.5 \\
+Zipper & 94.6 / 98.4 & 100 / 98.9 & 98.6 / 98.5 & 98.3 / 98.4 \\
+Avg.Obj. & 96.0 / 97.8 & 99.5 / 98.1 & 99.6 / 98.1 & 97.0 / 97.8 \\
+Average & 95.6 / 97.4 & 99.1 / 98.1 & 99.6 / 98.3 & 96.6 / 97.4 \\
+
+
+
+
+\author{
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        Wendong Geng\textsuperscript{1} \quad Fenghua Zhu\textsuperscript{2} \quad Gang Xiong\textsuperscript{2} \quad Shichao Chen\textsuperscript{2} \quad Yisheng Lv\textsuperscript{2} \\
+
+        \vspace{0.3cm}
+
+        \textsuperscript{1}School of AI, Chinese Academy of Sciences University, Beijing, 100071, China \\
+        \textsuperscript{2}Institute of Automation, Chinese Academy of Sciences, Beijing, 100190, China \\
+
+        \vspace{0.3cm}
+
+        \texttt{gengwendong2023@ia.ac.cn}
+        \quad \texttt{fenghua.zhu@ia.ac.cn} \quad \texttt{gang.xiong@ia.ac.cn} \\
+        \quad \texttt{shichao.chen@ia.ac.cn} \quad \texttt{yisheng.lv@ia.ac.cn}
+    \end{minipage}
+
+    \begin{minipage}{\textwidth}
+        \centering
+
+    \end{minipage}
+}
+
