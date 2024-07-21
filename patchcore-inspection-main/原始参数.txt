@@ -1,0 +1,36 @@
+________**********_________>
+backbone_names: ('wideresnet50',)
+layers_to_extract_from: ('layer2', 'layer3')
+pretrain_embed_dimension: 1024
+target_embed_dimension: 1024
+preprocessing: mean
+aggregation: mean
+patchsize: 3
+patchscore: max
+patchoverlap: 0.0
+anomaly_scorer_num_nn: 1
+patchsize_aggregate: ()
+faiss_on_gpu: True
+faiss_num_workers: 8
+________**********_________>
+________**********_________>
+name: mvtec
+data_path: /common_datasets/mvtec_anomaly_detection
+subdatasets: ('bottle', 'screw')
+train_val_split: 1.0
+batch_size: 2
+resize: 256
+imagesize: 224
+num_workers: 8
+augment: False
+________**********_________>
+________**********_________>
+methods: {'get_patchcore': <function patch_core.<locals>.get_patchcore at 0x7f3d42f4d6c0>, 'get_sampler': <function sampler.<locals>.get_sampler at 0x7f3e50151ee0>, 'get_dataloaders': <function dataset.<locals>.get_dataloaders at 0x7f3d41a8d3a0>}
+results_path: results
+gpu: (0,)
+seed: 0
+log_group: IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1_S0
+log_project: MVTecAD_Results
+save_segmentation_images: False
+save_patchcore_model: True
+________**********_________>
