@@ -1,0 +1,187 @@
+load train set feature from: ./mvtec_result\temp_wide_resnet50_2\train_bottle.pkl
+| feature extraction | test | bottle |: 100%|██████████| 3/3 [00:02<00:00,  1.23it/s]
+image ROCAUC: 0.998
+pixel ROCAUC: 0.982
+| feature extraction | train | hw_hq_data |: 100%|██████████| 6/6 [00:05<00:00,  1.11it/s]
+| feature extraction | test | hw_hq_data |: 100%|██████████| 4/4 [00:03<00:00,  1.08it/s]
+image ROCAUC: 0.890
+pixel ROCAUC: 0.845
+| feature extraction | train | hw_ls_data |: 100%|██████████| 5/5 [00:03<00:00,  1.61it/s]
+| feature extraction | test | hw_ls_data |: 100%|██████████| 3/3 [00:02<00:00,  1.43it/s]
+image ROCAUC: 0.612
+pixel ROCAUC: 0.656
+Average ROCAUC: 0.834
+Average pixel ROCUAC: 0.828
+
+-------------------------------------------------------
+load train set feature from: ./mvtec_result\temp_wide_resnet50_2\train_screw.pkl
+| feature extraction | test | screw |: 100%|██████████| 5/5 [00:05<00:00,  1.04s/it]
+1) image ROCAUC: 0.334
+2) image ROCAUC: 0.334
+image ROCAUC: 0.835
+pixel ROCAUC: 0.982
+| feature extraction | train | hw_ls_data |: 100%|██████████| 5/5 [00:06<00:00,  1.21s/it]
+| feature extraction | test | hw_ls_data |: 100%|██████████| 3/3 [00:03<00:00,  1.13s/it]
+1) image ROCAUC: 0.582
+2) image ROCAUC: 0.582
+image ROCAUC: 0.413
+pixel ROCAUC: 0.577
+Average ROCAUC: 0.624
+Average pixel ROCUAC: 0.779
+
+----------------------------------------------------------------------------------------
+
+load train set feature from: ./mvtec_result\temp_wide_resnet50_2\train_bottle.pkl
+| feature extraction | test | bottle |: 100%|██████████| 3/3 [00:02<00:00,  1.05it/s]
+____bottle______image ROCAUC: 0.636
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+_____bottle_____Accuracy: 0.7590361445783133
+_____bottle_____Recall: 1.0
+_____bottle_____Precision: 0.7590361445783133
+_____bottle_____F1 Score: 0.8630136986301369
+load train set feature from: ./mvtec_result\temp_wide_resnet50_2\train_cable.pkl
+| feature extraction | test | cable |: 100%|██████████| 5/5 [00:07<00:00,  1.50s/it]
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+____cable______image ROCAUC: 0.434
+_____cable_____Accuracy: 0.6133333333333333
+_____cable_____Recall: 1.0
+_____cable_____Precision: 0.6133333333333333
+_____cable_____F1 Score: 0.7603305785123966
+load train set feature from: ./mvtec_result\temp_wide_resnet50_2\train_grid.pkl
+| feature extraction | test | grid |: 100%|██████████| 3/3 [00:02<00:00,  1.03it/s]
+____grid______image ROCAUC: 0.680
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+_____grid_____Accuracy: 0.8076923076923077
+_____grid_____Recall: 1.0
+_____grid_____Precision: 0.7916666666666666
+_____grid_____F1 Score: 0.8837209302325582
+load train set feature from: ./mvtec_result\temp_wide_resnet50_2\train_hazelnut.pkl
+| feature extraction | test | hazelnut |: 100%|██████████| 4/4 [00:05<00:00,  1.42s/it]
+____hazelnut______image ROCAUC: 0.611
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+_____hazelnut_____Accuracy: 0.6363636363636364
+_____hazelnut_____Recall: 1.0
+_____hazelnut_____Precision: 0.6363636363636364
+_____hazelnut_____F1 Score: 0.7777777777777778
+load train set feature from: ./mvtec_result\temp_wide_resnet50_2\train_leather.pkl
+| feature extraction | test | leather |: 100%|██████████| 4/4 [00:06<00:00,  1.53s/it]
+____leather______image ROCAUC: 0.690
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+_____leather_____Accuracy: 0.7661290322580645
+_____leather_____Recall: 0.9891304347826086
+_____leather_____Precision: 0.7647058823529411
+_____leather_____F1 Score: 0.8625592417061612
+load train set feature from: ./mvtec_result\temp_wide_resnet50_2\train_metal_nut.pkl
+| feature extraction | test | metal_nut |: 100%|██████████| 4/4 [00:03<00:00,  1.15it/s]
+____metal_nut______image ROCAUC: 0.549
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+_____metal_nut_____Accuracy: 0.8347826086956521
+_____metal_nut_____Recall: 1.0
+_____metal_nut_____Precision: 0.8303571428571429
+_____metal_nut_____F1 Score: 0.9073170731707317
+load train set feature from: ./mvtec_result\temp_wide_resnet50_2\train_pill.pkl
+| feature extraction | test | pill |: 100%|██████████| 6/6 [00:06<00:00,  1.01s/it]
+____pill______image ROCAUC: 0.757
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+_____pill_____Accuracy: 0.8562874251497006
+_____pill_____Recall: 0.9574468085106383
+_____pill_____Precision: 0.8823529411764706
+_____pill_____F1 Score: 0.9183673469387754
+load train set feature from: ./mvtec_result\temp_wide_resnet50_2\train_screw.pkl
+| feature extraction | test | screw |: 100%|██████████| 5/5 [00:05<00:00,  1.16s/it]
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+____screw______image ROCAUC: 0.874
+_____screw_____Accuracy: 0.875
+_____screw_____Recall: 0.8991596638655462
+_____screw_____Precision: 0.9304347826086956
+_____screw_____F1 Score: 0.9145299145299145
+| feature extraction | train | toothbrush |: 100%|██████████| 2/2 [00:03<00:00,  1.55s/it]
+| feature extraction | test | toothbrush |: 100%|██████████| 2/2 [00:02<00:00,  1.11s/it]
+____toothbrush______image ROCAUC: 0.542
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+_____toothbrush_____Accuracy: 0.7142857142857143
+_____toothbrush_____Recall: 1.0
+_____toothbrush_____Precision: 0.7142857142857143
+_____toothbrush_____F1 Score: 0.8333333333333333
+| feature extraction | train | transistor |: 100%|██████████| 7/7 [00:10<00:00,  1.54s/it]
+| feature extraction | test | transistor |: 100%|██████████| 4/4 [00:05<00:00,  1.29s/it]
+____transistor______image ROCAUC: 0.738
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+_____transistor_____Accuracy: 0.62
+_____transistor_____Recall: 0.875
+_____transistor_____Precision: 0.5147058823529411
+_____transistor_____F1 Score: 0.6481481481481481
+| feature extraction | train | wood |: 100%|██████████| 8/8 [00:12<00:00,  1.56s/it]
+| feature extraction | test | wood |: 100%|██████████| 3/3 [00:04<00:00,  1.48s/it]
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+____wood______image ROCAUC: 0.643
+_____wood_____Accuracy: 0.759493670886076
+_____wood_____Recall: 1.0
+_____wood_____Precision: 0.759493670886076
+_____wood_____F1 Score: 0.8633093525179857
+| feature extraction | train | zipper |: 100%|██████████| 8/8 [00:07<00:00,  1.02it/s]
+| feature extraction | test | zipper |: 100%|██████████| 5/5 [00:05<00:00,  1.08s/it]
+____zipper______image ROCAUC: 0.304
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+_____zipper_____Accuracy: 0.7880794701986755
+_____zipper_____Recall: 1.0
+_____zipper_____Precision: 0.7880794701986755
+_____zipper_____F1 Score: 0.8814814814814815
+Average ROCAUC: 0.621
+Average pixel ROCUAC: nan
+
+
+--------------------------------------------------------------------------------------
+____wood______image ROCAUC: 0.911
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+_____wood_____Accuracy: 0.8734177215189873
+_____wood_____Recall: 1.0
+_____wood_____Precision: 0.8571428571428571
+_____wood_____F1 Score: 0.923076923076923
+load train set feature from: ./mvtec_result\temp_wide_resnet50_2\train_screw.pkl
+| feature extraction | test | screw |: 100%|██████████| 5/5 [00:05<00:00,  1.16s/it]
+____screw______image ROCAUC: 0.004
+D:\ProgramData\anaconda3\envs\chatglm6b\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+_____screw_____Accuracy: 0.74375
+_____screw_____Recall: 1.0
+_____screw_____Precision: 0.74375
+_____screw_____F1 Score: 0.8530465949820789
+Average ROCAUC: 0.457
+==============================================================================================
+
+____screw______image ROCAUC: 0.772
+
+
+# 在channel上进行直方图的分布计算
+专门训练的模型 ____screw______image ROCAUC: 0.727              004_model_screw.pth
+全部数据进行统一训练 ____screw______image ROCAUC: 0.772         004_model_wood.pth
+华为1000的数据 ____screw______image ROCAUC: 0.874              002_best_model_big_hw_ls_1000data_easy.pth
+全部数据进行统一训练 ____screw______image ROCAUC: 0.367         006_model_epoch_20.pth
+
+# 安装i像素位置计算
+专门训练的模型 image ROCAUC: 0.670                             004_model_screw.pth
+全部数据进行统一训练 image ROCAUC: 0.853                        004_model_wood.pth
+华为1000的数据 image ROCAUC: 0.678                             002_best_model_big_hw_ls_1000data_easy.pth
+
+
+# 不加载预训练模型              /            加载预训练模型
+image ROCAUC: 0.423           /            image ROCAUC: 0.592
+                                           image ROCAUC: 0.705
+                                           image ROCAUC: 0.604
+                                           image ROCAUC: 0.854
+
+____screw______image ROCAUC: 0.448
